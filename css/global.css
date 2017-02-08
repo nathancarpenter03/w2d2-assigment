@@ -1,0 +1,123 @@
+/* Mobile view first */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-bluebox {
+    flex: 1;
+    text-align: center;
+    padding: 10vw 0;
+    background: #1560FB;
+}
+
+.image-stormtrooper {
+        display: inline-block;
+        background-image: url(../images/stormtrooper.jpg);
+        background-size: cover;
+        border-radius: 50%;
+        background-position: 50% 20%;
+        padding: 12vw;
+        margin-bottom: 20px;
+        box-shadow:  0px 0px 15px 1px rgba(0,0,0,0.75);
+}
+
+.howdie {
+    color: darkgray;
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+.imcam {
+    margin: 0px 20px 0px 20px;
+    font-size: 6vw;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.coffeebox{
+    color: white;
+    border: solid 2px white;
+    margin-left: 17%;
+    margin-right: 17%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.coffee-ul {
+    display: flex;
+    list-style: none;
+}
+
+.coffee-li {
+    flex: 1;
+}
+
+.header-bottom-ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-bottom-li {
+    flex: 1;
+}
+
+.column-info {
+    flex: 1;
+}
+
+.row-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-title {
+    flex: 1;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #1560FB;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.column-description {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    font-size: 2vw;
+}
+
+.about-ul {
+    font-size: 2.25vw;
+}
+.about-li {
+  margin: 5px;
+}
+
+/* Tablet */
+@media all and (min-width: 555px) {
+    .row {
+    flex-direction: row;
+    }
+}
+    
+/* Laptop */
+
+@media all and (min-width: 769px) {
+    .row-info {
+    flex-direction: row;
+    }
+}
